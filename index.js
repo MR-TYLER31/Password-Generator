@@ -1,4 +1,4 @@
-
+// Generate a random password with the input provided by the user
 
 var chars = {
     lowerCase: ['abcdefghijklmnopqrstuvwxyz'],
