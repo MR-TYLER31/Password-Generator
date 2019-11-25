@@ -34,10 +34,10 @@ var password = {
 
 
 
-chars.inputLength()
-chars.symbolInput()
-chars.randomLower()
-chars.randomUpper()
+password.inputLength()
+password.symbolInput()
+password.randomLower()
+password.randomUpper()
 
 
 alert('Click the generate button to see your new password')
