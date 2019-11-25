@@ -1,20 +1,22 @@
 // Generate a random password with the input provided by the user
 
-var chars = {
-    lowerCase: ['abcdefghijklmnopqrstuvwxyz'],
-    upperCase: ['ABCDEFGHIJKLMONPQRSTUVWXYZ'],
-    symbols: ['~`!@#$%^&*()={}?<>:;'],
-    numbers: [1,2,3,4,5,6,7,8,9,0],
+
+var password = {
+    lowerCaseArr: ['abcdefghijklmnopqrstuvwxyz'],
+    upperCaseArr: ['ABCDEFGHIJKLMONPQRSTUVWXYZ'],
+    symbolsArr: ['~`!@#$%^&*()={}?<>:;'],
+    numbersArr: [1,2,3,4,5,6,7,8,9,0],
 
     inputLength: function() {
-        var lengthInput = prompt("Pick a number between a 8 and 128 the password length");
+        var lengthInput = prompt("Pick a number between a 8 and 128 for the password length");
           lengthInput = parseInt(lengthInput)
         
-        console.log(lengthInput)
+        console.log(`Your password will be ${lengthInput} characters long`)
     },
 
     symbolInput: function() {
         var symbols = confirm("Would you like special characters?");
+        
         console.log(symbols)
     },
 
@@ -37,6 +39,8 @@ chars.symbolInput()
 chars.randomLower()
 chars.randomUpper()
 
+
+alert('Click the generate button to see your new password')
 
 
 
