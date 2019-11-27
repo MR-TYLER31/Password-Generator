@@ -15,7 +15,7 @@ var password = {
     
     generateLowerCase: function(){
         var letterLower = this.lowerCaseArr[Math.floor(Math.random() * 26)]
-        console.log(letter);
+        console.log(letterLower);
 
     },
 
@@ -88,9 +88,9 @@ var password = {
 
 password.inputLength()
 password.symbolInput()
-password.randomLower()
-password.randomUpper()
-password.randomNum()
+password.lowerInput()
+password.upperInput()
+password.numInput()
 password.generateLowerCase()
 password.generateUpperCase()
 password.generateSymbol()
