@@ -87,15 +87,15 @@ var password = {
 }
 
 
-password.inputLength()
-password.symbolInput()
-password.lowerInput()
-password.upperInput()
-password.numInput()
-password.generateLowerCase()
-password.generateUpperCase()
-password.generateSymbol()
-password.generateNum()
+// password.inputLength()
+// password.symbolInput()
+// password.lowerInput()
+// password.upperInput()
+// password.numInput()
+// password.generateLowerCase()
+// password.generateUpperCase()
+// password.generateSymbol()
+// password.generateNum()
 
 
 
