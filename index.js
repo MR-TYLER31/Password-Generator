@@ -48,7 +48,7 @@ var password = {
     symbolInput: function() {
         var symbolsPrompt = confirm("Would you like special characters?");
 
-        if (symbols) {
+        if (symbolsPrompt) {
             password.containsSpecial = true
           }
         
@@ -86,13 +86,13 @@ var password = {
 }
 
 
-// password.inputLength()
-// password.symbolInput()
-// password.randomLower()
-// password.randomUpper()
-// password.randomNum()
-// password.generateLowerCase()
-// password.generateUpperCase()
+password.inputLength()
+password.symbolInput()
+password.randomLower()
+password.randomUpper()
+password.randomNum()
+password.generateLowerCase()
+password.generateUpperCase()
 password.generateSymbol()
 
 
