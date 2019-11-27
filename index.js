@@ -38,11 +38,10 @@ var password = {
         
         if(lengthInput >= 8 && lengthInput <= 128) {
             password.passwordLength = lengthInput
+            console.log(`Your password will be ${lengthInput} characters long`)
         } else {
             password.inputLength();
-        }
-          
-        console.log(`Your password will be ${lengthInput} characters long`)
+        }     
     },
 
     symbolInput: function() {
