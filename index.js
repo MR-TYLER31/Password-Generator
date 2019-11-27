@@ -16,19 +16,21 @@ var password = {
     generateLowerCase: function(){
         var letterLower = this.lowerCaseArr[Math.floor(Math.random() * 26)]
         console.log(letterLower);
-
     },
 
     generateUpperCase: function(){
         var letterUpper = this.upperCaseArr[Math.floor(Math.random() * 26)]
         console.log(letterUpper);
-
     },
 
     generateSymbol: function(){
         var randSymbol = this.symbolsArr[Math.floor(Math.random() * 20)]
         console.log(randSymbol);
+    },
 
+    generateNum: function(){
+        var randNum = this.numbersArr[Math.floor(Math.random() * 20)]
+        console.log(randNum);
     },
 
 
@@ -93,6 +95,7 @@ password.numInput()
 password.generateLowerCase()
 password.generateUpperCase()
 password.generateSymbol()
+password.generateNum()
 
 
 
