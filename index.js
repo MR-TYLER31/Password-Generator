@@ -26,6 +26,7 @@ var lowerCaseEl,
  
 
    function inputLength() {
+       // Ask the user how long they want their password
             var lengthEl = prompt("Pick a number between a 8 and 128 for the password length");
             var length = parseInt(lengthEl);
             if(lengthEl >= 8 && lengthEl <= 128) {
@@ -80,8 +81,6 @@ generateBtn.addEventListener('click', function() {
     
 
  
-// pull in selected input from user
-// take user input and randomize by the length of the user input length
 
 
 inputLength();
@@ -107,100 +106,4 @@ userInput();
 
 
 
-//     // Generate random character
-//     function generateLowerCase(){
-//         var letterLower = lowerCaseArr[Math.floor(Math.random() * 26)]
-//         console.log(letterLower);
-//     }
-
-//     // Generate random character
-//     function generateUpperCase(){
-   
-//             var letterUpper = upperCaseArr[Math.floor(Math.random() * 26)]
-//         console.log(letterUpper);     
-//    }
-
-//     // Generate random character
-//     function generateSymbol(){
-//         var randSymbol = symbolsArr[Math.floor(Math.random() * 20)]
-//         console.log(randSymbol);
-//     }
-
-//     // Generate random character
-//     function generateNum(){
-//         var randNum = numbersArr[Math.floor(Math.random() * 10)];
-//         console.log(randNum);
-//     }
-
-//     // Get the length input from user
-//     function inputLength() {
-//         var lengthEl = prompt("Pick a number between a 8 and 128 for the password length");
-        
-//         if(lengthEl >= 8 && lengthEl <= 128) {
-//             console.log(`Your password will be ${lengthEl} characters long`);
-//             console.log(parseInt(lengthEl));
-//         } else {
-//            inputLength();
-//         }     
-//     }
-
-//     // Get the symbol input from user
-//     function symbolInput() {
-//         var symbolsEl = confirm("Would you like special characters?");
-
-//         if (symbolsEl) {
-//             console.log(symbolsEl)
-//           }      
-//     }
-
-//     // Get the lowercase input from user
-//     function lowerInput() {
-//         var lowerCaseEl = confirm("Would you like lower case characters?");
-
-//         if (lowerCaseEl) {
-//             console.log(lowerCaseEl)
-//           }   
-//     }
-
-//     // Get the uppercase input from user
-//     function upperInput() {
-//         var upperCaseEl = confirm("Would you like upper case characters?");
-
-//         if (upperCaseEl) {
-//             console.log(upperCaseEl);
-//           }
-//     }
-
-//     // Get the number input from user
-//     function numInput() {
-//         var numberEl = confirm("Would you like numbers?");
-
-//         if (numberEl) {
-//             console.log(numberEl)
-//           } 
-//         }
-
-   
-
-
-  
-
-  
-
-
-// inputLength()
-// symbolInput()
-// lowerInput()
-// upperInput()
-// numInput()
-// generateLowerCase()
-// generateUpperCase()
-// generateSymbol()
-// generateNum()
-
-
-
-
-
-// alert('Click the generate button to see your new password')
 
