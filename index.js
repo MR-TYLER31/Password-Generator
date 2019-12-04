@@ -85,7 +85,7 @@ newPassword = function (length, masterPassword) {
     //Iniitalize final password as blank string
     let userPassword = '';
 
-    //Append random character from the passwordOptions
+    //Append random character from the masterPassword 
     for (let i = 0; i < length; i++) {
         userPassword += masterPassword.charAt(Math.floor(Math.random() * masterPassword.length))
     };
@@ -94,7 +94,7 @@ newPassword = function (length, masterPassword) {
 }
 
 function copyClip() {
-    // Get the text field
+    // Get the text in the text area
     var copyBtn = document.getElementById("password");
   
 
@@ -102,10 +102,10 @@ function copyClip() {
     copyBtn.select();
     copyBtn.setSelectionRange(0, 99999); 
   
-    //Copy the text inside the text field
+    //Copy the text inside the textarea
     document.execCommand("copy");
   
-    //Alert copied/failed message
+    // logic to display message
     if (copyBtn.value === '') {
             setMessage('You must generate a password first!', 'red')
         } else 
