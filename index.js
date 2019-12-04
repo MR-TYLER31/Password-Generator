@@ -3,6 +3,7 @@ var resultEl = document.getElementById('password');
 var generateBtn = document.getElementById('generate');
 var copyBtn = document.getElementById('copy');
 var message = document.getElementById('message')
+var clearBtn = document.getElementById('clear');
 
 
 // Global Variables
@@ -89,6 +90,7 @@ newPassword = function (length, masterPassword) {
         userPassword += masterPassword.charAt(Math.floor(Math.random() * masterPassword.length))
     };
     resultEl.innerHTML = userPassword;
+
 }
 
 function copyClip() {
@@ -96,7 +98,7 @@ function copyClip() {
     var copyBtn = document.getElementById("password");
   
 
-    //Select the text field
+    //Select the textarea
     copyBtn.select();
     copyBtn.setSelectionRange(0, 99999); 
   
@@ -123,6 +125,9 @@ function setMessage(msg, color) {
 
 
 
-
+clearBtn.addEventListener('click', function() {
+    document.getElementById('password').value = "";
+})
+    
 
 
