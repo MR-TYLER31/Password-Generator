@@ -21,9 +21,10 @@ Text editor of your choosing, internet connection
 1. Create a folder directory called 'password-generator' or name of your choice.
 2. Inside folder, create 3 files (index.html, index.js).
 3. Inside password-generator create a folder directory called 'assests';
-4. Inside assets folder create a folder called 'css'.
+4. Inside assets folder create two folders called 'css' and 'images'.
 5. Inside the css folder create a file named style.css. This is the file where you will create your css.
-6. Add README.md file if you would like.
+6. Inside the images folder you can add a picture for your readme.
+7. Add README.md file if you would like.
 
 ```
 
