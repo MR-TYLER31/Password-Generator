@@ -16,7 +16,14 @@
     <div class="container">
         <div class="card shadow p-3 mb-5 bg-white rounded">
             <div class="card-body">
-                <h2>Generate a Password</h2>
+              <div class="row">
+                <div class="col-md-4">
+                    <h2>Generate a Password</h2>
+                </div>  
+                <div class="col-md-8">
+                    <h5 class="text-left" id="message"></h5>
+                </div>             
+              </div>
                 <hr>
                 <div class="row">
                   <div class="col-md-12 d-flex justify-content-center">
@@ -27,13 +34,17 @@
                 <hr>
                 
                 <div class="row">
-                  <div class="col-md-6 d-flex justify-content-center">
-                      <button class="btn btn-danger rounded-pill mt-3" id="generate">Generate Password</button>
-                  </div>
-                  <div class="col-md-6 d-flex justify-content-center">
-                    <button class="btn btn-secondary rounded-pill mt-3" id="copy">
-                      Copy to Clipboard
-                    </button>
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <button class="btn btn-danger rounded-pill mt-3" id="generate">Generate Password</button>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <button onclick="copyClip()" class="btn btn-success rounded-pill mt-3" id="copy">
+                          Copy to Clipboard
+                        </button>
+                      </div>
+                      <div class="col-md-2 d-flex justify-content-center">
+                          <button class="btn btn-secondary rounded-pill mt-3" id="clear">lear</button>
+                      </div>            
                   </div>
                 </div>          
             </div>
