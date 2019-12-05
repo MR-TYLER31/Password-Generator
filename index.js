@@ -119,8 +119,9 @@ function copyClip() {
 function setMessage(msg, color) {
         message.style.color = color
         message.textContent = msg;
+
   setTimeout(function() {
-    document.getElementById('message').remove();
+    document.getElementById('message').textContent = "";
   }, 3000)
 }
 
