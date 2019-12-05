@@ -46,5 +46,6 @@ Text editor of your choosing, internet connection
 
 ## Resources
 
-- 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://www.w3schools.com/
 
