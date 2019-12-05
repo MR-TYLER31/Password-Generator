@@ -81,7 +81,7 @@ function generatePassword() {
  
 //Password Generation Function
 newPassword = function (length, masterPassword) {
-
+    var resultEl = document.getElementById('password');
     //Iniitalize final password as blank string
     let userPassword = '';
 
@@ -89,7 +89,9 @@ newPassword = function (length, masterPassword) {
     for (let i = 0; i < length; i++) {
         userPassword += masterPassword.charAt(Math.floor(Math.random() * masterPassword.length))
     };
-    resultEl.innerHTML = userPassword;
+    
+    resultEl.innerHTML = userPassword ;
+   
 
 }
 
@@ -106,7 +108,7 @@ function copyClip() {
     document.execCommand("copy");
   
     // logic to display message
-    if (copyBtn.value === '') {
+    if (copyBtn.innerHTML === '') {
             setMessage('You must generate a password first!', 'red')
         } else 
             setMessage('Copied to the clipboard', 'green')
@@ -122,12 +124,8 @@ function setMessage(msg, color) {
   }, 3000)
 }
 
-
-
-
+// Click event to clear the textarea
 clearBtn.addEventListener('click', function() {
-    document.getElementById('password').value = "";
+    document.getElementById('password').innerHTML = "";
 })
     
-
-
