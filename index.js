@@ -32,19 +32,19 @@ generateBtn.addEventListener('click', generatePassword);
 // function to ask for users input and conditional logic
 function generatePassword() {
         var lengthEl = prompt("Pick a number between a 8 and 128 for the password length");
-             var length = parseInt(lengthEl);
-             if(lengthEl >= 8 && lengthEl <= 128) {
-                 console.log(parseInt(length));
-             } else {
-                generatePassword();
-             }     
+        var length = parseInt(lengthEl);
+             if(length < 8 || length > 128 || !length) {
+                alert("Password Length Must be between 8 and 128 Characters")
+                
+                return        
+              } 
 
          // Asks user if they want to use lowercase letters
          var lowerCaseEl = confirm("Would you like lower case characters?");
          var lowercase = lowerCaseEl;
              if(lowerCaseEl) {           
                  masterPassword += lowerCaseArr.slice(0,8);    
-                 console.log(lowercase)
+                //  console.log(lowercase)
              }  
  
              // Asks user if they want to use uppercase letters
@@ -52,7 +52,7 @@ function generatePassword() {
              var uppercase = upperCaseEl;
              if(upperCaseEl) {   
                  masterPassword += upperCaseArr.slice(0,8);;   
-                 console.log(upperCaseEl);
+                //  console.log(upperCaseEl);
              }
  
              // Asks user if they want to use a symbol
@@ -60,7 +60,7 @@ function generatePassword() {
              var symbol = symbolEl;
              if(symbolEl) {   
                  masterPassword += symbolArr.slice(0,8);          
-                 console.log(symbol);
+                //  console.log(symbol);
 
              }
  
@@ -69,7 +69,7 @@ function generatePassword() {
              var number = numberEl;
              if(numberEl) { 
                  masterPassword += numberArr.slice(0,8);                             
-                 console.log(number)
+                //  console.log(number)
              }
              // User must select at least 1 character option or the generate function will be called again
              if (!lowerCaseEl && !upperCaseEl && !numberEl && !symbolEl) {
