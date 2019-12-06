@@ -3,7 +3,7 @@
 This is a application that with will prompt the user to select requirements to generate a random password. 
 The user will select the length of the password as long as it is between 8 - 128 characters long. User must choose at least one of the following character options which inlude: Uppercase, Lowercase, Symbols and Numbers. Once user answers all the prompted questions the password will show up in the text area field. User can then choose to copy the password to a clipboard and then will be able to click the clear button to clear the text area and generate a new password if user chooses to do so.
 
-<img class="img-me img-fluid py-2" src="assets/images/me.JPEG" alt="me" width="100" height="100">          
+<img class="img-fluid py-2" src="assets/images/screen-shot.PNG" alt="screen shot" width="100" height="100">          
 
 ## Getting Started
 
@@ -39,7 +39,7 @@ Text editor of your choosing, internet connection
 
 ## Links to Wesbsite 
 
-- 
+- https://mr-tyler31.github.io/Password-Generator/
 
 
 
@@ -48,4 +48,6 @@ Text editor of your choosing, internet connection
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - https://www.w3schools.com/
+- https://getbootstrap.com/docs/4.3/getting-started/introduction/
+- https://stackoverflow.com/
 
